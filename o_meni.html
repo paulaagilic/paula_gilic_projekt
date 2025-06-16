@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>o meni</title>
+<style>
+/* Navigacija */
+ul {
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 240, 245, 0.6); 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+li {
+    background-color: #f4c2c2;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+li:active {
+    background-color: #ffffff;
+    color: #cc3366;
+    transform: scale(1.05);
+}
+
+li a {
+    color: #660033;
+    font: small-caps bold 16px/1 sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+/* Telo */
+body {
+    background-image: url("pozadine/pozadina1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Naslovi */
+h1 {
+    font: small-caps bold 35px/1 sans-serif;
+    color: #660033;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font: small-caps bold 26px/1 sans-serif;
+    color: #4d004d;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Paragraf */
+p {
+    font-size: 20px;
+    color: #4d004d;
+    font: small-caps bold 20px/1.4 sans-serif;
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Video */
+iframe, video {
+    width: 90%;
+    max-width: 800px;
+    height: 500px;
+    display: block;
+    margin: 40px auto;
+    border-radius: 15px;
+    border: 8px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Galerija - redovi slika */
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px auto;
+    flex-wrap: nowrap;
+}
+
+/* Gornji red - šire slike */
+.row-top img {
+    width: 320px;
+}
+
+/* Donji red - malo uže slike */
+.row-bottom img {
+    width: 280px;
+}
+
+/* Stil za sve slike */
+.gallery-row img {
+    height: auto;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.gallery-row img:hover {
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+<center>
+<nav>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="vjezbe.html">VJEŽBE</a></li>
+        <li><a href="video.html">VIDEO</a></li>
+    </ul>
+</nav>
+</center>
+
+<h1><i>O MENI</i></h1>
+
+<p>Ja sam <i>Paula Gilić</i> i trenutno sam studentica <b>Grafičkog fakulteta</b>. Volim izazove, upoznavanje novih ljudi i jako sam otvorena osoba. Uvijek sam spremna za nove avanture i putovanja. Volim šminku, životinje, odbojku i druženja.</p>
+
+<h2>MOJA GALERIJA</h2>
+
+<!-- Prvi red sa 3 slike -->
+<div class="gallery-row row-top">
+    <img src="slike/slika1.jpeg" alt="Slika 1">
+    <img src="slike/slika2.jpeg" alt="Slika 2">
+    <img src="slike/slika3.jpeg" alt="Slika 3">
+</div>
+
+<!-- Drugi red sa 2 slike -->
+<div class="gallery-row row-bottom">
+    <img src="slike/slika4.jpeg" alt="Slika 4">
+    <img src="slike/slika5.jpeg" alt="Slika 5">
+</div>
+
+<ul>
+    <li><a href="https://youtu.be/PP2fELH8uTQ?si=FxC2HbX-h2XvP5Gq">SONG</a></li>
+</ul>
+
+<br><br><br><br>
+
+</body>
+</html>
